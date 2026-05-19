@@ -1,0 +1,17 @@
+# Jupyter Book 빌드 결과물
+docs/_build/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Claude Code 로컬 설정
+.claude/settings.local.json

@@ -1,0 +1,47 @@
+format: jb-book
+root: intro
+
+parts:
+  - caption: "Claude Code — 공통 가이드"
+    chapters:
+      - file: contents/claude/common/10_glossary
+        title: 1. 용어 정리
+      - file: contents/claude/common/11_dev_environment
+        title: 2. 개발 환경 개요
+      - file: contents/claude/common/12_prompt_strategy
+        title: 3. 프롬프트 전략과 구조
+      - file: contents/claude/common/13_tdd_workflow
+        title: 4. TDD 워크플로
+      - file: contents/claude/common/14_mcp_integration
+        title: 5. MCP 통합
+      - file: contents/claude/common/15_full_workflow
+        title: 6. 전체 통합 워크플로
+      - file: contents/claude/common/16_vscode_setup
+        title: 7. VSCode 확장 설정
+
+  - caption: "Claude Code — Windows 환경"
+    chapters:
+      - file: contents/claude/windows/20_setup_win
+        title: 1. Windows 환경 설정
+      - file: contents/claude/windows/21_language_examples_win
+        title: 2. Windows 언어별 TDD 예제
+      - file: contents/claude/windows/22_session_routine_win
+        title: 3. Windows 세션 루틴
+      - file: contents/claude/windows/23_local_llm_win
+        title: 4. Windows 로컬 LLM 설정
+
+  - caption: "Claude Code — WSL2 환경"
+    chapters:
+      - file: contents/claude/wsl/30_setup_wsl
+        title: 1. WSL2 환경 설정
+      - file: contents/claude/wsl/31_language_examples_wsl
+        title: 2. WSL2 딥러닝 TDD 예제
+      - file: contents/claude/wsl/32_session_routine_wsl
+        title: 3. WSL2 세션 루틴
+      - file: contents/claude/wsl/33_local_llm_wsl
+        title: 4. WSL2 로컬 LLM 설정
+
+  - caption: "Gemini CLI (향후 추가 예정)"
+    chapters:
+      - file: contents/gemini/common/placeholder
+        title: 준비 중
