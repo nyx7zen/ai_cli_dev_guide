@@ -19,32 +19,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: pip install "jupyter-book==1.0.4"
+      - run: pip install "jupyter-book==1.0.4"
 
-      - name: Build Jupyter Book
-        run: jupyter-book build docs/ --verbose
+      - run: jupyter-book build docs/
 
-      - name: Debug build output
-        if: always()
-        run: |
-          echo "--- docs/ ---"
-          ls -la docs/
-          echo "--- docs/_build/ ---"
-          ls -la docs/_build/ || echo "NOT FOUND"
-          echo "--- docs/_build/html/ ---"
-          ls -la docs/_build/html/ || echo "NOT FOUND"
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/_build/html
 
@@ -55,6 +40,5 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
