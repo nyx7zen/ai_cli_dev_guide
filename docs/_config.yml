@@ -1,13 +1,12 @@
 # Jupyter Book configuration
 title: Claude Code AI CLI 개발자 가이드
 author: nyx7zen
-logo: ""
 
 execute:
   execute_notebooks: "off"
 
 repository:
-  url: https://github.com/nyx7zen/claude-code-guide
+  url: https://github.com/nyx7zen/ai_cli_dev_guide
   path_to_book: docs
   branch: main
 

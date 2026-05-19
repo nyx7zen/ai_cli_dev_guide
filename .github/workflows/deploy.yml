@@ -28,6 +28,9 @@ jobs:
       - name: Build Jupyter Book
         run: jupyter-book build docs/
 
+      - name: Verify build output
+        run: test -d docs/_build/html
+
       - name: Deploy to GitHub Pages
         run: |
           ghp-import -n -p -f docs/_build/html
