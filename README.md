@@ -1,5 +1,7 @@
 # Claude Code AI CLI 개발자 가이드
 
+[![Deploy Jupyter Book](https://github.com/nyx7zen/ai_cli_dev_guide/actions/workflows/deploy.yml/badge.svg)](https://github.com/nyx7zen/ai_cli_dev_guide/actions/workflows/deploy.yml)
+
 Claude Code CLI 워크플로 전환을 위한 통합 개발자 가이드입니다.
 
 ## 주요 내용
